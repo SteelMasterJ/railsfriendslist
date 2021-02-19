@@ -11,32 +11,34 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+  <div class="field mb-3 mt-4">
+    <% form.label :first_name %>
+    <%= form.text_field :first_name, class:"form-control", placeholder:"First Name" %>
+  </div>
+
+  <div class="field mb-3">
+    <% form.label :last_name %>
+    <%= form.text_field :last_name, class:"form-control", placeholder:"Last Name" %>
+  </div>
+
+  <div class="field mb-3">
+    <% form.label :email %>
+    <%= form.text_field :email, class:"form-control", placeholder:"me@example.com" %>
+  </div>
+
+  <div class="field mb-3">
+    <% form.label :phone %>
+    <%= form.text_field :phone, class:"form-control", placeholder:"Phone Number" %>
   </div>
 
   <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+    <% form.label :screen_name %>
+    <%= form.text_field :screen_name, class:"form-control", placeholder:"Screen Name" %>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
-  </div>
-
-  <div class="field">
-    <%= form.label :phone %>
-    <%= form.text_field :phone %>
-  </div>
-
-  <div class="field">
-    <%= form.label :screen_name %>
-    <%= form.text_field :screen_name %>
-  </div>
+  </br>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-primary" %>
   </div>
 <% end %>

@@ -35,6 +35,10 @@
     <% form.label :screen_name %>
     <%= form.text_field :screen_name, class:"form-control", placeholder:"Screen Name" %>
   </div>
+  <div class="field">
+    <% form.label :user_id %>
+    <%= form.number_field :user_id, class:"form-control", value: current_user.id, id: :friend_user_id, type: :hidden %>
+  </div>
 
   </br>
 
